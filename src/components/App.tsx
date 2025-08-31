@@ -1,4 +1,4 @@
-import css from "./react-cafe-styles/App.module.css";
+import css from "../react-cafe-styles/App.module.css";
 import { useState } from "react";
 import CafeInfo from "./CafeInfo/CafeInfo";
 import type { Votes, VoteType } from "../types/votes";
