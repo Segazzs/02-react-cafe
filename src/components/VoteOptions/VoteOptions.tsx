@@ -1,13 +1,13 @@
 import css from "../../react-cafe-styles/VoteOptions.module.css";
 import type { VoteType } from "../../types/votes";
 
-interface Props {
+interface VoteOptionsProps {
   onVote: (type: VoteType) => void;
   onReset: () => void;
   canReset?: boolean;
 }
 
-export default function VoteOptions(props: Props) {
+export default function VoteOptions(props: VoteOptionsProps) {
   return (
     <div className={css.container}>
       <button className={css.button} onClick={() => props.onVote("good")}>
